@@ -10,7 +10,6 @@ $(function(){
                 check = false;
             }
             let n = $('.blocks__puzzle')[Math.floor(Math.random() * 16)];
-            console.log(num)
             num.add(n);
         }
         $('.blocks__left').html('');
