@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="timer">
+                <p class="timer__minutes">01</p>
+                <p class="timer__colon">:</p>
+                <p class="timer__seconds">00</p>
+            </div>
+            <div class="buttons">
+                <button id="startButton" class="buttons__button">Start game!</button>
+                <button disabled id="checkButton" class="buttons__button">Check result</button>
+                <button id="newGame" class="buttons__button">New game</button>
+            </div>
+            <div class="blocks">
+                <div class="blocks__left blocks__small">
+                    <div class="blocks__puzzle blocks__puzzle-1"></div>
+                    <div class="blocks__puzzle blocks__puzzle-2"></div>
+                    <div class="blocks__puzzle blocks__puzzle-3"></div>
+                    <div class="blocks__puzzle blocks__puzzle-4"></div>
+                    <div class="blocks__puzzle blocks__puzzle-5"></div>
+                    <div class="blocks__puzzle blocks__puzzle-6"></div>
+                    <div class="blocks__puzzle blocks__puzzle-7"></div>
+                    <div class="blocks__puzzle blocks__puzzle-8"></div>
+                    <div class="blocks__puzzle blocks__puzzle-9"></div>
+                    <div class="blocks__puzzle blocks__puzzle-10"></div>
+                    <div class="blocks__puzzle blocks__puzzle-11"></div>
+                    <div class="blocks__puzzle blocks__puzzle-12"></div>
+                    <div class="blocks__puzzle blocks__puzzle-13"></div>
+                    <div class="blocks__puzzle blocks__puzzle-14"></div>
+                    <div class="blocks__puzzle blocks__puzzle-15"></div>
+                    <div class="blocks__puzzle blocks__puzzle-16"></div>
+                </div>
+                <div class="blocks__right">
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                    <div class="blocks__container-puzzle blocks__small"></div>
+                </div>
+            </div>
+            <div style="display: none;" class="message-bg">
+                <div class="message">
+                    <div id="closeText" class="message__text">It's a pity, but you lost</div>
+                    <!-- <div style="display: none;" id="wellText" class="message__text">Woohoo, well done, you did it!</div>
+                    <div style="display: none;" id="checkText" class="message__text">You still have time, you sure?00:00</div> -->
+                    <div class="message__buttons">
+                        <button id="messageButton" class="message__button">Close</button>
+                        <button style="display: none;" id="messageButtonCheck" class="message__button">Check</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
